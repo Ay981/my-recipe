@@ -3,7 +3,7 @@ import { FaRegArrowAltCircleLeft, FaRegArrowAltCircleRight } from "react-icons/f
 
 function Hero() {
   return (
-    <div className="relative w-[1264px] h-[355px] ml-34  mt-7 overflow-hidden rounded-2xl ">
+    <div className="relative w-6xl h-96 ml-34  mt-7 overflow-hidden rounded-2xl ">
      
       <img src={FoodHero} alt="" className="w-full h-full object-cover" />
     
