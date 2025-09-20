@@ -3,7 +3,7 @@ import { FaRegArrowAltCircleLeft, FaRegArrowAltCircleRight } from "react-icons/f
 
 function Hero() {
   return (
-    <div className="relative w-[92rem] h-96 ml-34  mt-7 overflow-hidden rounded-2xl ">
+    <div className="relative w-[104rem] h-96 ml-34  mt-7 overflow-hidden rounded-2xl ">
      
       <img src={FoodHero} alt="" className="w-full h-full object-cover" />
     
@@ -18,7 +18,7 @@ function Hero() {
         
 
       </div>
-      <div className='absolute bottom-8 right-1/2 flex gap-4 text-2xl z-10 font-thin'>       
+      <div className='absolute bottom-8 right-1/2 flex gap-4 text-2xl z-10 font-thin cursor-pointer'>       
        <FaRegArrowAltCircleLeft color='white'/>
        <FaRegArrowAltCircleRight color = 'white'/> 
       
@@ -32,24 +32,3 @@ function Hero() {
 
 export default Hero
 
-// function Hero() {
-//   return (
-//     <>
-//     <div className="w-full flex justify-center my-3 h-96 rounded-full ">
-//       <div className="Hero w-[80%] h-full bg-linear-0">
-//       <div className="flex flex-col  mt-22 ml-20 font-bold font-[Poppins] w-[35%] ">
-//         <p className="text-[#DC582A] text-2xl">Trending now</p>
-//         <br />
-//         <p className="text-[#fff] text-5xl">Mike’s famous salad <br /> with cheese</p>
-//     </div>
-//     </div>
-
-//     </div>
-    
-    
-    
-//     </>
-//   )
-// }
-
-// export default Hero
