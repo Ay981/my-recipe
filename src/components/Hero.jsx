@@ -3,30 +3,35 @@ import { FaRegArrowAltCircleLeft, FaRegArrowAltCircleRight } from "react-icons/f
 
 function Hero() {
   return (
-    <div className="relative w-[104rem] h-96 ml-34  mt-7 overflow-hidden rounded-2xl ">
-     
-      <img src={FoodHero} alt="" className="w-full h-full object-cover" />
-    
-      <div className="absolute inset-0 bg-black/40 z-10"></div>
-    
-      <div className="absolute z-10 top-1/4 left-12 text-white">
-        <p className="text-[#DC582A] text-2xl font-bold mb-2">Trending now</p>
-        <p className="text-5xl font-bold">
-          Mike’s famous salad <br />with cheese
-        </p>
-        <p className="mt-4 font-medium">By John Mike</p>
-        
+    <section className="w-full px-4 pt-6">
+      <div className="relative mx-auto h-[18rem] max-w-6xl overflow-hidden rounded-2xl md:h-[24rem] lg:h-[28rem]">
+        <img
+          src={FoodHero}
+          alt="Mike’s famous salad with cheese"
+          className="h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/45"></div>
 
+        <div className="absolute inset-x-6 top-1/4 z-10 text-white md:inset-x-10 lg:inset-x-12">
+          <p className="text-sm font-semibold text-[#DC582A] md:text-base lg:text-lg">Trending now</p>
+          <h1 className="mt-1 text-2xl font-bold leading-tight md:text-4xl lg:text-5xl">
+            Mike’s famous salad
+            <br className="hidden md:block" />
+            with cheese
+          </h1>
+          <p className="mt-4 text-sm font-medium md:text-base">By John Mike</p>
+        </div>
+
+        <div className="absolute bottom-6 left-1/2 z-10 flex -translate-x-1/2 gap-4 text-2xl text-white">
+          <button type="button" aria-label="Previous">
+            <FaRegArrowAltCircleLeft />
+          </button>
+          <button type="button" aria-label="Next">
+            <FaRegArrowAltCircleRight />
+          </button>
+        </div>
       </div>
-      <div className='absolute bottom-8 right-1/2 flex gap-4 text-2xl z-10 font-thin cursor-pointer'>       
-       <FaRegArrowAltCircleLeft color='white'/>
-       <FaRegArrowAltCircleRight color = 'white'/> 
-      
-      </div>
-
-
-
-    </div>
+    </section>
   )
 }
 

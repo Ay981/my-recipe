@@ -1,25 +1,29 @@
 import './App.css'
 import CustomContainer from '../src/components/CustomContainer'
+import Custom from './components/Custom'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Card from './components/Card' 
-import recipe from '../src/assets/recipe_tempo.png'
-import Load from './components/Load'
+import Login from './components/Login'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 function App() {
-  return (
+  const Home = () => (
     <>
       <Header/>
       <Hero/>
       <CustomContainer/>
-      <div className='flex justify-center items-center mt-8 gap-3.5'>     
-         <Card time={"40 min"} image={recipe} title={"Russian"} rating={4.5}/> 
-          <Card time={"40 min"} image={recipe} title={"Russian"} rating={4.5}/> 
-     
-      </div>
+      <Card/>
+    </>
+  )
 
-         <Load/>
-
-    </>   
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

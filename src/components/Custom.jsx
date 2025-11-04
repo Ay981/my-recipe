@@ -21,6 +21,9 @@ function Custom({color,text}) {
 
 
     </div>
+    <div className="hidden md:flex items-center justify-between gap-6">
+  {/* buttons */}
+</div>
     
     
     </>
